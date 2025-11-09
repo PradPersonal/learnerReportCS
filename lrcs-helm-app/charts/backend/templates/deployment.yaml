@@ -1,0 +1,10 @@
+# charts/backend/templates/deployment.yaml (snippet)
+apiVersion: apps/v1
+kind: Deployment
+spec:
+  containers:
+  - name: backend
+    image: "{{ .Values.image.repository }}:{{ .Values.image.tag }}"
+    env:
+    - name: MONGODB_CONNECTION_STRING
+      value: "{{ .Values.mongodbConnectionString }}"
