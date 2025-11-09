@@ -1,3 +1,12 @@
+# uild Applicatio
+  > aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 975050024946.dkr.ecr.ca-central-1.amazonaws.com
+  > docker build -t lrcs-frontend .
+  > docker tag lrcs-frontend:latest 975050024946.dkr.ecr.ca-central-1.amazonaws.com/lrcs-frontend:latest
+  > docker push 975050024946.dkr.ecr.ca-central-1.amazonaws.com/ecr-prad:latest
+
+
+
+
 # 1. Containerize Your Applications
   - Create a Dockerfile for both your frontend and backend applications. This defines how to build the container images. 
   -  - For Backend & Frontend: Navigate to each service's directory and run
