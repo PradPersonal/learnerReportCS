@@ -1,4 +1,4 @@
-# Build Applicatio
+# Build Application
   > aws ecr get-login-password --region ca-central-1 | docker login --username AWS --password-stdin 975050024946.dkr.ecr.ca-central-1.amazonaws.com
   > docker build -t lrcs-frontend .
   > docker tag lrcs-frontend:latest 975050024946.dkr.ecr.ca-central-1.amazonaws.com/lrcs-frontend:latest
