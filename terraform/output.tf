@@ -5,3 +5,6 @@ output "repository_urls" {
     for key, repo in aws_ecr_repository.ecr_repos : key => repo.repository_url
   }
 }
+output "jenkins_public_ip" {
+  value = aws_instance.jenkins_server.public_ip
+}
